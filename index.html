@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Google Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            margin: 100px auto;
+            max-width: 600px;
+        }
+
+        .search-box {
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .search-input {
+            border: none;
+            outline: none;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .search-button {
+            background-color: #4285f4;
+            border: none;
+            border-radius: 24px;
+            color: white;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+
+        .lucky-div {
+            display: flex;
+            align-items: center;
+        }
+
+        .lucky-button {
+            background-color: #0F9D58;
+            border: none;
+            border-radius: 24px;
+            color: white;
+            cursor: pointer;
+            justify-content: center;
+            padding: 10px 20px;
+            margin-left: 10px;
+        }
+
+        .links {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="links">
+        <a href="img.html" target="_blank">Image Search</a>
+        <a href="Advanced.html" target="_blank">Advanced Search</a>
+    </div>
+    <div class="container">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_92x30dp.png" alt="Google">
+        <form action="https://www.google.com/search" method="GET">
+            <div class="search-box">
+                <input class="search-input" type="text" name="q" title="Search">
+
+            </div>
+            <button class="search-button" type="submit">Google Search</button>
+            <div class="lucky-button">
+                <a href="https://www.google.com/doodles" class="lucky-button">I'm Feeling Lucky</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
